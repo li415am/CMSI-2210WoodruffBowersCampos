@@ -7,7 +7,7 @@ int main( int argc, char * argv[] ) {
     printf("Enter a name: ");
     gets(name);
     
-    printf( "\n\n Hello, %s!\n\n", name);
+    printf( "\n\n\t Hello, %s!\n\n\n", name);
     return 0;
 
 }
