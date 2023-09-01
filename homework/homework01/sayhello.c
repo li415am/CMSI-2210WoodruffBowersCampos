@@ -3,6 +3,11 @@
 
 int main( int argc, char * argv[] ) {
 
-    printf( "\n\n Hello, world!!\n\n");
+    char name[25];
+    printf("Enter a name: ");
+    gets(name);
+    
+    printf( "\n\n Hello, %s!\n\n", name);
+    return 0;
 
 }
