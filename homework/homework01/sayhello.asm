@@ -1,4 +1,5 @@
-global      _start                   ; on Linux this should be "_start"
+;Note: I am running Linux on my computer
+global      _start                   ; on Linux this should be "_start" 
 
          section     .text
 _start:   mov         rax, 1         ; system call for write [Linux should be "_start"]
