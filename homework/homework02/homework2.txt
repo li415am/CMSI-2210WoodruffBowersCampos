@@ -8,13 +8,13 @@
 8. 
 9. The commands to list out contents of a directory on a mac terminal window is ls for the current directory or ls <directory or path> if you want to list a different directory than the current directory.
 10.
-11.
+11. Digital Logic and Control are the two lowest layers of computer systems. Digital Logic (the lowest) consists of the physical pieces and hardware within our computers, repsonsible for the basic physical functionality of the entire system. The Control Layer (second lowest) is made up of microcode a little of both hard and software built physically into the computer. This layer is responsible for some basic commands and using the aspects of the previous layer
 12. The three steps of Von Neumann Architecture are fetch, decode, and execute.
 13. 
 14.
 15.
-16.
-17.
+16. These phrases are Assembly code, the level above machine code. Assembly code consists of phrases like these which coorespond to machine code made up binary the computer can directly read and understand.
+17. The System Bus consists of 3 buses. The Data Bus is responsible for holding/transporting the accessed bits, with the Address bus assigning where the data is going, and Control Bus orchestrating which buses and aspects of the computer are active.  
 18.10010111 = 1, 2, 4, 9, 18, 37, 75, 151 = 151 in decimal
 19.11111111 = 2^8 = 255
 20.2^16=65536 The largest unsigned integer value that will fit into 16 bits is 65535.
