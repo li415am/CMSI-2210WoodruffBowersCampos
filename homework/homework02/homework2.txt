@@ -1,1 +1,21 @@
-1. A computer system is ...
+1. A computer system is a way of communicating with users and other computers through inputs and outputs that operate through hardware.
+2. A computer system includes parts such as a keyboard, screen, mouse, CPU, RAM, hard drive, circuits, and chips.
+3. A compiled language is a language that uses everyday language which makes it more readable and easier to understand for people. This code is then compiled, turned into machine language, so that the computer can run the program. The machine language is unable to be read by people. An interpreted language does not need to be compiled because the interpreted language is read by another program, the interpreter, which executes the code. This means that interpreted languages are usually slower.
+4. Yes, C is a compiled language. For example, when running our code in C we had to use GCC, which compiled our code for us.
+5. The language C was invented by Dennis M. Ritchie. https://www.section.io/engineering-education/history-of-c-programming-language/
+6. The language has been used since it was invented in 1972. Intitally, it was used to rewrite UNIX. Currently, it is used in UNIX operating systems, databases, and lower level programs. https://www.section.io/engineering-education/history-of-c-programming-language/
+7. 
+8. 
+9. The commands to list out contents of a directory on a mac terminal window is ls for the current directory or ls <directory or path> if you want to list a different directory than the current directory.
+10.
+11.
+12. The three steps of Von Neumann Architecture are fetch, decode, and execute.
+13. 
+14.
+15.
+16.
+17.
+18.10010111 = 1, 2, 4, 9, 18, 37, 75, 151 = 151 in decimal
+19.11111111 = 2^8 = 255
+20.2^16=65536 The largest unsigned integer value that will fit into 16 bits is 65535.
+
