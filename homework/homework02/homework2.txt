@@ -1,21 +1,21 @@
 1. A computer system is a way of communicating with users and other computers through inputs and outputs that operate through hardware.
 2. A computer system includes parts such as a keyboard, screen, mouse, CPU, RAM, hard drive, circuits, and chips.
-3. A compiled language is a language that uses everyday language which makes it more readable and easier to understand for people. This code is then compiled, turned into machine language, so that the computer can run the program. The machine language is unable to be read by people. An interpreted language does not need to be compiled because the interpreted language is read by another program, the interpreter, which executes the code. This means that interpreted languages are usually slower.
+3. A compiled language is a language that uses everyday language which makes it more readable and easier to understand for people. This code is then compiled, or turned into machine language, so that the computer can run the program. The machine language is unable to be read by people. An interpreted language does not need to be compiled because the interpreted language is read by another program, the interpreter, which executes the code. This means that interpreted languages are usually slower.
 4. Yes, C is a compiled language. For example, when running our code in C we had to use GCC, which compiled our code for us.
 5. The language C was invented by Dennis M. Ritchie. https://www.section.io/engineering-education/history-of-c-programming-language/
 6. The language has been used since it was invented in 1972. Intitally, it was used to rewrite UNIX. Currently, it is used in UNIX operating systems, databases, and lower level programs. https://www.section.io/engineering-education/history-of-c-programming-language/
 7. A compiler is a translator that translates from high level programming langauge to assembly language. 
-8. An assembler is also a translator but it translates from assembly language to machinie language.
+8. An assembler is also a translator, but it translates from assembly language to machinie language.
 9. The commands to list out contents of a directory on a mac terminal window is ls for the current directory or ls <directory or path> if you want to list a different directory than the current directory.
 10. The "C" function atof() converts the string argument str to a floating point number. https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
-11. Digital Logic and Control are the two lowest layers of computer systems. Digital Logic (the lowest) consists of the physical pieces and hardware within our computers, repsonsible for the basic physical functionality of the entire system. The Control Layer (second lowest) is made up of microcode a little of both hard and software built physically into the computer. This layer is responsible for some basic commands and using the aspects of the previous layer
+11. Digital Logic and Control are the two lowest layers of computer systems. Digital Logic (the lowest) consists of the physical pieces and hardware within our computers, repsonsible for the basic physical functionality of the entire system. The Control Layer (second lowest) is made up of microcode, a little of both hardware and software built physically into the computer. This layer is responsible for some basic commands and using the aspects of the previous layer.
 12. The three steps of Von Neumann Architecture are fetch, decode, and execute.
 13. An ALU is an arithmetic logic unit which preforms opertations done on integers, including mathematical and bit-wise operations.  
 14. A register is a small set of data holding places: it may hold instruction, a storage address, or any kind of data. https://www.techtarget.com/whatis/definition/register
 15. One difference between "Application software" and "System Software" is that "Application Software" is written for people and "System Software" is written for computers. 
-16. These phrases are Assembly code, the level above machine code. Assembly code consists of phrases like these which coorespond to machine code made up binary the computer can directly read and understand.
-17. The System Bus consists of 3 buses. The Data Bus is responsible for holding/transporting the accessed bits, with the Address bus assigning where the data is going, and Control Bus orchestrating which buses and aspects of the computer are active.  
-18.10010111 = 1, 2, 4, 9, 18, 37, 75, 151 = 151 in decimal
-19.11111111 = 2^8 = 255
-20.2^16=65536 The largest unsigned integer value that will fit into 16 bits is 65535.
+16. These phrases are Assembly code, the level above machine code. Assembly code consists of phrases which coorespond to machine code made up binary the computer can directly read and understand.
+17. The system bus consists of 3 buses. The data bus is responsible for holding/transporting the accessed bits, the address bus assigns where the data is going, and the control bus orchestrates which buses and aspects of the computer are active.  
+18.10010111 = 1, 2, 4, 9, 18, 37, 75, 151 = 151 (in decimal)
+19.11111111 = 2^8-1 = 255 (in decimal)
+20.2^16=65536 -1 The largest unsigned integer value that will fit into 16 bits is 65535.
 
