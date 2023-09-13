@@ -4,8 +4,8 @@
 4. Yes, C is a compiled language. For example, when running our code in C we had to use GCC, which compiled our code for us.
 5. The language C was invented by Dennis M. Ritchie. https://www.section.io/engineering-education/history-of-c-programming-language/
 6. The language has been used since it was invented in 1972. Intitally, it was used to rewrite UNIX. Currently, it is used in UNIX operating systems, databases, and lower level programs. https://www.section.io/engineering-education/history-of-c-programming-language/
-7. 
-8. 
+7. A compiler is a translator that translates from high level programming langauge to machine code. 
+8. An assemler is also a translator but it translates from assembly language to machinie code language.
 9. The commands to list out contents of a directory on a mac terminal window is ls for the current directory or ls <directory or path> if you want to list a different directory than the current directory.
 10.
 11. Digital Logic and Control are the two lowest layers of computer systems. Digital Logic (the lowest) consists of the physical pieces and hardware within our computers, repsonsible for the basic physical functionality of the entire system. The Control Layer (second lowest) is made up of microcode a little of both hard and software built physically into the computer. This layer is responsible for some basic commands and using the aspects of the previous layer
