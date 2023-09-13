@@ -4,15 +4,15 @@
 4. Yes, C is a compiled language. For example, when running our code in C we had to use GCC, which compiled our code for us.
 5. The language C was invented by Dennis M. Ritchie. https://www.section.io/engineering-education/history-of-c-programming-language/
 6. The language has been used since it was invented in 1972. Intitally, it was used to rewrite UNIX. Currently, it is used in UNIX operating systems, databases, and lower level programs. https://www.section.io/engineering-education/history-of-c-programming-language/
-7. A compiler is a translator that translates from high level programming langauge to machine code. 
-8. An assemler is also a translator but it translates from assembly language to machinie code language.
+7. A compiler is a translator that translates from high level programming langauge to assembly language. 
+8. An assembler is also a translator but it translates from assembly language to machinie language.
 9. The commands to list out contents of a directory on a mac terminal window is ls for the current directory or ls <directory or path> if you want to list a different directory than the current directory.
-10.
+10. The "C" function atof() converts the string argument str to a floating point number. https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
 11. Digital Logic and Control are the two lowest layers of computer systems. Digital Logic (the lowest) consists of the physical pieces and hardware within our computers, repsonsible for the basic physical functionality of the entire system. The Control Layer (second lowest) is made up of microcode a little of both hard and software built physically into the computer. This layer is responsible for some basic commands and using the aspects of the previous layer
 12. The three steps of Von Neumann Architecture are fetch, decode, and execute.
-13. 
-14.
-15.
+13. An ALU is an arithmetic logic unit which preforms opertations done on integers, including mathematical and bit-wise operations.  
+14. A register is a small set of data holding places: it may hold instruction, a storage address, or any kind of data. https://www.techtarget.com/whatis/definition/register
+15. One difference between "Application software" and "System Software" is that "Application Software" is written for people and "System Software" is written for computers. 
 16. These phrases are Assembly code, the level above machine code. Assembly code consists of phrases like these which coorespond to machine code made up binary the computer can directly read and understand.
 17. The System Bus consists of 3 buses. The Data Bus is responsible for holding/transporting the accessed bits, with the Address bus assigning where the data is going, and Control Bus orchestrating which buses and aspects of the computer are active.  
 18.10010111 = 1, 2, 4, 9, 18, 37, 75, 151 = 151 in decimal
