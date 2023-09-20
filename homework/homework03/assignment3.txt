@@ -42,4 +42,10 @@ B-level Problems
 
 A-level problems
 2. 7F7FFFFF
-3. 
+3. FF7FFFFF
+4. 80000001
+5. 00000001
+6. EDA40000
+7. 00000800
+8. 00000060
+
