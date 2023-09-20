@@ -21,6 +21,7 @@ C-level problems:
 20. 7FFF
 21. N
 22. Y
+
 B-level Problems
 2. 585B
 3. FFFF
@@ -38,6 +39,7 @@ B-level Problems
 15. CB800000
 16. 240
 17. -7.96875
+
 A-level problems
 2. 7F7FFFFF
-
+3. 
