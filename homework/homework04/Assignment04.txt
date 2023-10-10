@@ -1,0 +1,95 @@
+1. x:= not-A or C
+   y:= impossible
+
+2. Picture Uploaded in Github
+
+3.  a. AND 0xAAAAAAAA
+    b. OR 0x00000007
+    c. AND 0x00000007
+    d. OR 0xFFFFFFFF
+    e. ??????   NAND 0xC0000000
+    f. 
+
+4.          JMP    start
+    min:    0
+    max:    255
+    inc:    1
+    start:  LOAD    num
+            WRITE   0x8
+            ADD     inc
+            STORE   num
+            SUB     max
+            JLZ     start
+    end:    JMP     end
+
+5.  C0000004
+    00000000
+    00000100
+    00000001
+    00000001
+    30000008
+    40000003
+    10000001
+    50000002
+    E0000004
+    C000000A
+
+6.              JMP     start
+    temp1:      0
+    temp2:      0
+    greater:    0
+    smaller:    0
+    count:      0
+    one:        1
+                READ    0x100
+                STORE   temp1
+                READ    0x100
+                STORE   temp2
+                SUB     temp1
+                JGZ     grtTn
+                LOAD    temp2
+                STORE   smaller
+                STORE   count
+                LOAD    temp1
+                STORE   greater
+                JMP     start
+
+    grtTn:      LOAD    temp2
+                STORE   greater
+                LOAD    temp1
+                STORE   smaller
+                STORE   count
+                JMP     start
+
+    loop:       LOAD    smaller
+                MOD     count
+                JGZ     notgcf
+                LOAD    greater
+                MOD     count
+                JGZ     notgcf
+                LOAD    count
+                WRITE   0x100
+                JMP     end
+    
+    notgcf:     LOAD    count
+                SUB     one
+                STORE   count
+                JMP     loop
+
+    end:        JMP     end
+
+
+7.  temp:   0
+            STORE   temp
+            LOAD    0x30AA
+
+8.  JGZ     0x837BBE1
+    JZ      0x837BBE1
+
+9.  Part 1: The data in r8 and r9 have been switched, in other words the value that was
+    in r8 is now in r9 and the value in r9 is now in r8.
+
+    Part 2: This effect happens because when we exlusive or r8 and r9 the value is the
+    difference between the two. Then when we XOR r9 and r8, r9 now becomes the value of r8,
+    because the difference between the two is added. Then when we xor r8 and r9 the value
+    in r8 becomes the original value of r8, which is r9 minus the difference.
