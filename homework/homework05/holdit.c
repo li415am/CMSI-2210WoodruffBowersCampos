@@ -4,13 +4,12 @@
 int main(){
 
     printf("This program will time how long you can hold your breath. Take a deep breath, then press the 'Enter'key. When you absolutely have to exhale, press the enter key again. The duration will be displayed in minutes and seconds.\n");
-    clock_t initial_time, timer;
+    time_t initial_time, timer;
    
     getchar();
-    initial_time = clock();
-    printf("initial time- %lu", initial_time);
+    initial_time = time(NULL);
     getchar();
-    timer = clock();
-    printf("time- %lu", timer);
-    printf("You held your breath for: %d minutes and %d seconds", (timer-initial_time), ((timer-initial_time)));
+    timer = time(NULL);
+    printf("You held your breath for: %lu minutes and %lu seconds\n", (timer-initial_time)/60, (timer-initial_time)%60);
+    return 0;
 }
