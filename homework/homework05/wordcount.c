@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
+//Errors: Checks that a file was provided and that the file pointer is not null
 int main(int argc, char* argv[]){
     
     if (argc == 1){
@@ -19,7 +20,6 @@ int main(int argc, char* argv[]){
         printf("Unable to open file. Exiting program.");
         return 0;
     }
-
     
     while ((c = fgetc(fptr)) != EOF)
     {
@@ -33,8 +33,7 @@ int main(int argc, char* argv[]){
     }
     
     printf("There are %d words in the file %s.", word_count, argv[1]);
-
-
     fclose(fptr);
+    return 0;
 
 }

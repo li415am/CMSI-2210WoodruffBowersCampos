@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Chose to do the option where the user is prompted. Error checking for negative numbers.
+//Accepts letter and words because they are just represented as numbers.
 int main(){
 
     unsigned int num;

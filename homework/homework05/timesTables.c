@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Checks the arguments passed in and the size of the number, which is not very important
+// b/c very quickly the table is too big for the screen anyway.
 int main(int argc, char* argv[]){
     
     if (argc == 1){
@@ -10,7 +12,7 @@ int main(int argc, char* argv[]){
     int n = atoi(argv[1]);
     int width_spec = 0;
 
-    //sqrt of max int
+    //sqrt of max int = 46340
     if (n > 46340 || n < 2){
         printf("You entered a number too big. Exiting program.");
         return 0;
@@ -45,7 +47,6 @@ int main(int argc, char* argv[]){
     }
     printf("\n");
     
-    
     for (int i=2; i <= n; i++){
 
         printf("  %*d |",width_spec, i);
@@ -55,6 +56,4 @@ int main(int argc, char* argv[]){
         }
         printf("\n");
     }
-
-
 }

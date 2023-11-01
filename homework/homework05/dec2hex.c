@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Chose to do the option where the user is prompted. Error checking for negative numbers as well
+//as handles incorrect number of args.
+//Accepts letter and words because they are just represented as numbers.
+
 int main(int argc, char* argv[]){
 
     unsigned long num = 0;
@@ -22,8 +26,6 @@ int main(int argc, char* argv[]){
     scanf("%lu", &num);
     } while (num < 0);
 
-
-    
     int index = size-1;
     char hex[size+1];
 
@@ -39,6 +41,7 @@ int main(int argc, char* argv[]){
         }
 
         int rem = num%16;
+
         if (rem < 10){  
             hex[index] = rem + '0';
         }
@@ -62,8 +65,6 @@ int main(int argc, char* argv[]){
         }
               
         index -= 1;
-
-
         num /= 16;
     }
 
