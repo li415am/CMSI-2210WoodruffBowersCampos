@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>     // I added this to get rid of the warning
 
 //Checks the arguments passed in and the size of the number, which is not very important
 // b/c very quickly the table is too big for the screen anyway.
 int main(int argc, char* argv[]){
-    
+
     if (argc == 1){
         printf("You did not provide a number in the command line. Exiting program.");
         return 0;
@@ -43,10 +44,10 @@ int main(int argc, char* argv[]){
         printf("____");
         for (int z = 0; z < width_spec; z++){
             printf("_");
-        }    
+        }
     }
     printf("\n");
-    
+
     for (int i=2; i <= n; i++){
 
         printf("  %*d |",width_spec, i);
