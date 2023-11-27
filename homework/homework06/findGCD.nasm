@@ -4,6 +4,7 @@ global      _start
 msg1:   db          "Enter first number: ", 0
 msg2:   db          10, "Enter second number: ", 0
 msg3:   db          10, 0
+msg4:   db          "The Greatest Common Divisor is ", 0
 STDOUT  equ         1
 STDIN   equ         0
 SYS_wrt equ         1
@@ -19,22 +20,19 @@ num2:   resb        40
 _start:   
         mov         rdi, msg1   ;prints enter first number
         call        printMsg
-
         mov         rdi, num1   ;gets input
         call        getNum
-
         mov         rdi, num1   ;converts to decimal
         call        strToInt
+        mov         r12, rax
 
-        mov         rdi, rax
-        call        intToStr
-break:
-        ;mov         rdi, rax
-        ;call        printMsg
-
-
-        mov         rdi, msg2
+        mov         rdi, msg2   ;prints enter second num
         call        printMsg
+        mov         rdi, num2   ;get input again
+        call        getNum
+        mov         rdi, num2   ;convert to decimal
+        call        strToInt
+        mov         r13, rax
 
         mov         rdi, msg3
         call        printMsg
@@ -42,26 +40,36 @@ break:
 
         ;euclids on numbers in r12 and r13
         cmp         r12, r13
-        jl:         swap
-loopEclid:
+        jl          swap
+doneSwap:
         mov         rax, r12
         mov         rbx, r13
+loopEuclid:
         xor         rdx, rdx
         div         rbx
         cmp         rdx, 0
         je          foundGCD
         mov         rax, rbx
         mov         rbx, rdx
-        jmp         loopEclid
+        jmp         loopEuclid
 
         
 
 swap:
-        xor         r12, r13
         xor         r13, r12
         xor         r12, r13
+        xor         r13, r12
+        jmp         doneSwap
+
 foundGCD:
-        mov         rax, rbx
+        mov         rdi, msg4
+        call        printMsg
+        mov         rdi, rbx
+        call        intToStr
+        mov         rdi, rax
+        call        printMsg
+        mov         rdi, msg3
+        call        printMsg
 
 
         mov         rax, SYS_ext
@@ -132,10 +140,16 @@ terminate:
 
 ;convert from int to str (int)
 global      intToStr
+    section     .bss
+numStr      resb    15
     section     .text
 intToStr:
         mov         rax, rdi
-        xor         r10, r10
+        lea         r9, [numStr + 14]
+        mov         r10, 0
+        mov         [r9], r10b
+        dec         r9
+
 startIntConv:
         cmp         rax, 10
         jl          finConv
@@ -144,12 +158,12 @@ startIntConv:
         div         rbx         ;result in rax, remainer in rdx
         add         dl, '0'
         mov         [r9], dl
-        inc         r9
+        dec         r9
         jmp         startIntConv
 finConv:
-        mov         [r9], al
-        inc         r9
-        xor         al, al
+        add         al, '0'
         mov         [r9], al
         mov         rax, r9
+
+        ;flip string
         ret
