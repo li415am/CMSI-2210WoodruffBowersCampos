@@ -26,7 +26,7 @@ _start:
         call        strToInt
         mov         r12, rax
 
-        mov         rdi, msg2   ;prints enter second num
+        mov         rdi, msg2   ;prints enter second
         call        printMsg
         mov         rdi, num2   ;get input again
         call        getNum
@@ -147,7 +147,7 @@ numStr      resb    15
     section     .text
 intToStr:
         mov         rax, rdi
-        lea         r9, [numStr + 14]
+        lea         r9, [rel numStr + 14]
         mov         r10, 0
         mov         [r9], r10b
         dec         r9
@@ -157,7 +157,7 @@ startIntConv:
         jl          finConv
         mov         rbx, 10
         xor         rdx, rdx
-        div         rbx         ;result in rax, remainer in rdx
+        div         rbx         
         add         dl, '0'
         mov         [r9], dl
         dec         r9
@@ -167,5 +167,4 @@ finConv:
         mov         [r9], al
         mov         rax, r9
 
-        ;flip string
         ret
