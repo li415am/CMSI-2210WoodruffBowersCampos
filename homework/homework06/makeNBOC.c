@@ -1,7 +1,5 @@
 #include <stdlib.h>
 #include <arpa/inet.h>
-#include <stdio.h>
-
 
 int makeNBOC(int num){
 
