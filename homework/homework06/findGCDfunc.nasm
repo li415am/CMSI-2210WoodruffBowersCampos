@@ -1,3 +1,5 @@
+; coded on ubuntu version 22.04.03
+;assemble: nasm -felf64 findGCDfunc.nasm 
 global      findGCDfunc           
         section     .data
 msg3:   db          10, 0

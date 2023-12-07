@@ -1,3 +1,4 @@
+//compile, link, and run: gcc whichEndIsUp.c -o whichEndIsUp && ./whichEndIsUp
 #include <stdio.h>
 
 int main(){

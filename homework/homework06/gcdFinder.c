@@ -1,4 +1,6 @@
-//when compiling use gcc -static or gcc -no-pie
+//First must assemble nasm: nasm -felf64 findGCDfunc.nasm 
+//To compile and link:  gcc -static findGCDfunc.o gcdFinder.c -o gcdFinder
+//To run: ./gcdFinder
 #include <stdio.h>
 #include <assert.h>
 #include <inttypes.h>

@@ -1,3 +1,8 @@
+; coded on ubuntu version 22.04.03
+;
+;assemble: nasm -felf64 findGCD.nasm 
+;load: ld findGCD.o -o findGCD
+;run: ./findGCD
 global      _start           
 
         section     .data

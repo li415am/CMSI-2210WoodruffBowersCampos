@@ -1,3 +1,4 @@
+//compile and link and run: gcc makeNBOC.c makeNBOtest.c -o makeNBOtest && ./makeNBOtest
 #include <stdio.h>
 
 int makeNBOC(int);

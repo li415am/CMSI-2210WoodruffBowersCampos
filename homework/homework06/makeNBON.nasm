@@ -1,4 +1,7 @@
-; have to do gcc -static
+;coded on ubuntu version 22.04.03
+;assemble: nasm -felf64 makeNBON.nasm
+;compile and link: gcc -static makeNBOC.c makeNBON.o -o makeN
+;run: ./makeN
         global      main
         extern      makeNBOC
         extern      printf
@@ -27,7 +30,7 @@ main:
         mov         rsi, test1
         xor         rax, rax
         call        printf
-        mov         rdi, 0x12345678
+        mov         rdi, 0x78563412
         call        makeNBOC
         mov         rsi, rax
         mov         rdi, intf
@@ -50,7 +53,7 @@ main:
         mov         rsi, test3
         xor         rax, rax
         call        printf
-        mov         rdi, 0x11221122
+        mov         rdi, 0x1122
         call        makeNBOC
         mov         rsi, rax
         mov         rdi, intf
@@ -62,7 +65,7 @@ main:
         mov         rsi, test4
         xor         rax, rax
         call        printf
-        mov         rdi, 0x87654321
+        mov         rdi, 0x87
         call        makeNBOC
         mov         rsi, rax
         mov         rdi, intf
@@ -73,7 +76,7 @@ main:
         mov         rsi, test5
         xor         rax, rax
         call        printf
-        mov         rdi, 0x12344321
+        mov         rdi, 0x12344
         call        makeNBOC
         mov         rsi, rax
         mov         rdi, intf

@@ -1,3 +1,9 @@
+; coded on ubuntu version 22.04.03
+;just a function that is called (expects an argument that is one byte of data)
+;
+;assemble: nasm -felf64 paritygen.nasm
+;
+;provided is paritygen.c which is a c function that can be used to call this nasm function
 global       paritygen
 
         section     .data
