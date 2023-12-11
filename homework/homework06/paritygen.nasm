@@ -4,7 +4,7 @@
 ;assemble: nasm -felf64 paritygen.nasm
 ;
 ;provided is paritygen.c which is a c function that can be used to call this nasm function
-global       paritygen
+global       _paritygen
 
         section     .data
 STDOUT  equ         1
@@ -12,7 +12,7 @@ SYS_wrt equ         1
         section     .bss
 buffer  resb        1
         section     .text
-paritygen:
+_paritygen:
         xor         r11, r11
         xor         r10, r10
         xor         r9, r9

@@ -30,7 +30,7 @@ wordcount
 ========================================================
 
 TOTAL EARNED POINTS:
-   you earned 100/100 which is 90.00% which is an A-plus
+   you earned 100/100 which is 100.00% which is an A-plus
 
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
