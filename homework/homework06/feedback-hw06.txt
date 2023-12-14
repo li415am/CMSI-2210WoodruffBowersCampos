@@ -11,12 +11,12 @@ FINDGCD.NASM
 GCDFINDER
    nasm file assembles  [5 pts.]
    gcdFinder.c compiles [5 pts.]
-   link both files OK   [2 pts.]
+   link both files OK   [5 pts.]
    nasm returns value   [5 pts.]
    output correct       [2 pts.]
 PARITYGEN
    nasm file assembles  [5 pts.]
-   nasm runs            [2 pts.]
+   nasm runs            [5 pts.]
    output correct       [3 pts.]
 WHICHENDISUP
    compiles no errors   [5 pts.]
@@ -38,7 +38,7 @@ Total possible points 100
 ========================================================
 
 TOTAL EARNED POINTS:
-   you earned 93.00/100.00 which is 93% which is an A
+   you earned 99.00/100.00 which is 99% which is an A-plus
 
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
@@ -49,10 +49,12 @@ problem 2 findGCDfunc.nasm & gcdFinder.c: got a linker error on this, which
    said something about library not found for -lcrt0.o.  Not sure why you're
    using the syscall approach, though...  the error might be something to do
    with using 8-bit values with 64-bit architecture.
+   UPDATED to full credit based on e-mail exchange 2023-12-13.
 
 problem 3 partiygen.nasm: got a linker error on this, too...  plus this is
    not what the problem specified.  You were supposed to make this one file
    and a standalone program.  Still though....
+   UPDATED to full credit based on e-mail exchange 2023-12-13.
 
 problem 4 whichEndIsUp.c: perfect again!
 
@@ -70,8 +72,8 @@ SEMESTER HOMEWORK TOTALS:
    homework03 ~ 100.00% of  5 points =  5.00 points
    homework04 ~  92.22% of  5 points =  4.61 points
    homework05 ~ 100.00% of 10 points = 10.00 points
-   homework06 ~  93.00% of 15 points = 13.95 points
-                       semester total: 43.56 out of 45.00 = 96.80 98.70%
+   homework06 ~  99.00% of 15 points = 14.85 points
+                       semester total: 44.46 out of 45.00 = 98.80%
                              which is an A
 
 Great work on all these assignments!  It's been a pleasure having you in class
